@@ -30,6 +30,7 @@ defmodule RomanNumeral.Mixfile do
     [
       {:credo, "~> 0.3.10", only: [:dev, :test]},
       {:dialyxir, "~> 0.3.3", only: [:dev, :test]},
+      {:benchfella, "~> 0.2.1", only: [:dev, :test]}
     ]
   end
 end
