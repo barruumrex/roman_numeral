@@ -8,4 +8,5 @@ defmodule RomanNumeral do
   """
   @spec create(integer) :: String.t
   def create(0), do: "nvlla"
+  def create(1), do: "I"
 end
