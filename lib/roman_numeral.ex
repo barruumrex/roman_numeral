@@ -6,11 +6,11 @@ defmodule RomanNumeral do
   @doc """
   Create a Roman numeral representation of the integer
   """
-  @spec create(integer) :: String.t
+  @spec create(non_neg_integer) :: String.t
   def create(0), do: "nvlla"
-  def create(n) when is_integer(n), do: do_create(n, "")
+  def create(n) when is_integer(n) and n > 0, do: do_create(n, "")
 
-  @spec do_create(integer, String.t) :: String.t
+  @spec do_create(non_neg_integer, String.t) :: String.t
   defp do_create(0, result), do: result
   defp do_create(n, result) when is_integer(n) and n < 5, do: do_create(n - 1, result<>"I")
   defp do_create(n, result) when is_integer(n) and n < 10, do: do_create(n - 5, result<>"V")
