@@ -5,9 +5,20 @@ defmodule RomanNumeral do
 
   @doc """
   Create a Roman numeral representation of the integer
+
+  #Examples
+
+      iex> RomanNumeral.create(1999)
+      "MCMXCIX"
+
+      iex> RomanNumeral.create(2016)
+      "MMXVI"
+
+      iex> RomanNumeral.create(0)
+      "NVLLA"
   """
   @spec create(non_neg_integer) :: String.t
-  def create(0), do: "nvlla"
+  def create(0), do: "NVLLA"
   def create(n) when is_integer(n) and n > 0, do: do_create(n, "")
 
   @spec do_create(non_neg_integer, String.t) :: String.t
