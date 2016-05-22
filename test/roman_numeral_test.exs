@@ -11,6 +11,10 @@ defmodule RomanNumeralTest do
     assert create(1) == "I"
   end
 
+  test "2 becoems II" do
+    assert create(2) == "II"
+  end
+
   test "5 becomes V" do
     assert create(5) == "V"
   end
