@@ -27,6 +27,9 @@ defmodule RomanNumeral.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:credo, "~> 0.3.10", only: [:dev, :test]},
+      {:dialyxir, "~> 0.3.3", only: [:dev, :test]},
+    ]
   end
 end
