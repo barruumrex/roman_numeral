@@ -1,8 +1,9 @@
 defmodule RomanNumeralTest do
   use ExUnit.Case
+  import RomanNumeral
   doctest RomanNumeral
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "0 becomes nvlla" do
+    assert create(0) == "nvlla"
   end
 end
