@@ -1,6 +1,6 @@
 defmodule RomanNumeral do
   @moduledoc """
-  Methods for creating Roman numberals from integers
+  Methods for creating Roman numerals from integers
   """
 
   @doc """
